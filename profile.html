@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile — Velo's Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Cinzel:wght@400..900&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navgroup">
+        <a class="velo-heading" href="index.html">Velo's Salon</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="appointment.html">Book Appointment</a>
+            <button type="button" id="signOutBtn">Sign Out</button>
+        </div>
+    </nav>
+
+    <h1 class="profile-heading">My Profile</h1>
+    <div id="message"></div>
+
+    <!-- ==================== DISPLAY VIEW ==================== -->
+    <div id="profileDisplay">
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+                <!-- Initials avatar — shows first letter of name -->
+                <span id="displayInitials"></span>
+            </div>
+
+            <div class="profile-details">
+                <div class="profile-row">
+                    <span class="profile-label">Full Name: </span>
+                    <span class="profile-value" id="displayName"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Email: </span>
+                    <span class="profile-value" id="displayEmail"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Phone: </span>
+                    <span class="profile-value" id="displayPhone"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Username: </span>
+                    <span class="profile-value" id="displayUsername"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Gender: </span>
+                    <span class="profile-value" id="displayGender"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">City: </span>
+                    <span class="profile-value" id="displayCity"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Preferred Branch: </span>
+                    <span class="profile-value" id="displayBranch"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Preferred Services: </span>
+                    <span class="profile-value" id="displayServices"></span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Preferred Hairstylist: </span>
+                    <span class="profile-value" id="displayHairstylist"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="profile-actions">
+            <button type="button" id="editBtn" class="btn-primary">Edit Profile</button>
+            <br>
+            <a href="appointment.html" class="btn-secondary">Book Appointment</a>
+        </div>
+    </div>
+
+    <!-- ==================== EDIT VIEW ==================== -->
+    <!-- Hidden by default, shown when Edit Profile is clicked -->
+    <div id="profileEdit" style="display: none;">
+
+        <div class="profile-card">
+            <h2 class="edit-heading">Edit Profile</h2>
+            <p class="edit-note">Note: Name and email cannot be changed here. Contact support if needed.</p>
+
+            <form>
+                <div class="profile-edit-form">
+
+                    <div class="form-group">
+                        <label for="editPhone">Phone Number</label>
+                        <input type="tel" id="editPhone" placeholder="e.g. 071 234 5678">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editCity">City</label>
+                        <input type="text" id="editCity" placeholder="e.g. Cape Town">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editBranch">Preferred Branch</label>
+                        <select id="editBranch">
+                            <option value="bloemfontein">Bloemfontein</option>
+                            <option value="cape town">Cape Town</option>
+                            <option value="johannesburg">Johannesburg</option>
+                            <option value="brandfort">Brandfort</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editServices">Preferred Services</label>
+                        <select id="editServices">
+                            <option value="Women Hairstyles">Women Hairstyles</option>
+                            <option value="Men Hairstyles">Men Hairstyles</option>
+                            <option value="Kids Hairstyles">Kids Hairstyles</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editHairstylist">Preferred Hairstylist</label>
+                        <input type="text" id="editHairstylist" placeholder="e.g. Thandi">
+                    </div>
+
+                </div>
+
+                <div class="profile-actions">
+                    <button type="button" id="saveBtn" class="btn-primary">Save Changes</button>
+                    <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- ==================== BOOKINGS SECTION ==================== -->
+    <div id="bookingsSection">
+        <h2 class="bookings-heading">My Appointments</h2>
+
+        <!-- Populated by JS from Firestore -->
+        <div id="bookingsList">
+            <p id="noBookings">You have no upcoming appointments. <a href="appointment.html">Book one now!</a></p>
+        </div>
+    </div>
+
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

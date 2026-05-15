@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velo's Salon — Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Cinzel:wght@400..900&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="register-heading">Register An Account With Velo's Salon</h1>
+    <div id="message"></div>
+
+    <form>
+        <div class="register-form">
+            <div>
+                <label for="fullName">Full Name: </label>
+                <input type="text" id="fullName">
+            </div>
+            <div>
+                <label for="surname">Surname: </label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <label for="emailAddress">Email Address: </label>
+                <input type="email" id="emailAddress">
+            </div>
+            <div>
+                <label for="cellNumber">Cell Number: </label>
+                <input type="tel" name="cellNumber" id="cellNumber">
+            </div>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password: </label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+            <div>
+                <label for="preference">Preferred Services: </label>
+                <select id="preference">
+                    <option value="Women Hairstyles">Women Hairstyles</option>
+                    <option value="Men Hairstyles">Men Hairstyles</option>
+                    <option value="Kids Hairstyles">Kids Hairstyles</option>
+                </select>
+            </div>
+            <div>
+                <label for="preferredHairstylist">Preferred Hairstylist: </label>
+                <input type="text" name="preferredHairstylist" id="preferredHairstylist">
+            </div>
+            <div>
+                <label for="gender">Gender: </label>
+                <select id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">City: </label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div>
+                <label for="branch">Preferred Branch: </label>
+                <select id="branch">
+                    <option value="bloemfontein">Bloemfontein</option>
+                    <option value="cape town">Cape Town</option>
+                    <option value="johannesburg">Johannesburg</option>
+                    <option value="brandfort">Brandfort</option>
+                </select>
+            </div>
+            <div>
+                <label for="bookAppointment">Book Appointment After Signup: </label>
+                <input type="checkbox" name="bookAppointment" id="bookAppointment">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Select how we should send updates:</legend>
+                    <input type="checkbox" id="whatsapp" value="whatsapp">
+                    <label for="whatsapp">WhatsApp Notifications</label><br>
+                    <input type="checkbox" id="sms" value="sms">
+                    <label for="sms">SMS Reminders</label><br>
+                    <input type="checkbox" id="emailUpdates" value="email">
+                    <label for="emailUpdates">Email Promotions</label>
+                </fieldset>
+            </div>
+            <div>
+                <a href="footer/privacy_policy.html">Privacy Policies | Terms of Service</a>
+            </div>
+        </div>
+
+        <!-- ✅ type="button" prevents form submission -->
+        <button type="button" id="signUp">Register</button>
+    </form>
+
+    <script type="module" src="functionality.js"></script>
+</body>
+</html>
