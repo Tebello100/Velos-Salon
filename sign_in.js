@@ -28,25 +28,25 @@ async function signIn() {
         window.location.href = "index.html";
 
     } catch (error) {
-        // ✅ Show friendly error messages instead of raw Firebase ones
+        // Show friendly error messages instead of Firebase ones
         switch (error.code) {
             case "auth/user-not-found":
-                displayMessage("No account found with this email.", "error"); // ✅
+                displayMessage("No account found with this email.", "error"); 
                 break;
             case "auth/wrong-password":
-                displayMessage("Incorrect password. Please try again.", "error"); // ✅
+                displayMessage("Incorrect password. Please try again.", "error"); 
                 break;
             case "auth/invalid-email":
-                displayMessage("Please enter a valid email address.", "error"); // ✅
+                displayMessage("Please enter a valid email address.", "error"); 
                 break;
             case "auth/too-many-requests":
-                displayMessage("Too many attempts. Please try again later.", "error"); // ✅
+                displayMessage("Too many attempts. Please try again later.", "error"); 
                 break;
             case "auth/invalid-credential":
-                displayMessage("Incorrect email or password.", "error"); // ✅ covers newer Firebase versions
+                displayMessage("Incorrect email or password.", "error"); 
                 break;
             default:
-                displayMessage(error.message, "error"); // ✅
+                displayMessage(error.message, "error");
         }
     }
 }

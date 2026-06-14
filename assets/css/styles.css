@@ -1,3 +1,7 @@
+/* body{
+    background-color: #F5E7C6;
+} */
+
 .navigation{
     margin: 2px 10px 2px 0px;
     text-decoration: none;
@@ -501,13 +505,13 @@
     transform: scale(1.2);
 }
 
-.cornrow-hairstyle-list, .young-girls-hairstyle-list{
+.cornrow-hairstyle-list, .young-girls-hairstyle-list, .ponytail-hairstyle-list, .dread-hairstyle-list, .men-haircuts-list, .boys-haircuts-list{
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 20px;
 }
 
-.cornrow-images, .young-girls-hairstyle-images{
+.cornrow-images, .young-girls-hairstyle-images, .ponytail-images, .dread-images, .men-haircuts-images, .boys-haircuts-images{
     width: 200px;
     height: 200px;
 }

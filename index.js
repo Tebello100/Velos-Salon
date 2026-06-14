@@ -13,11 +13,11 @@ const navAuth = document.getElementById("navAuth");
             if (docSnap.exists()) {
                 const profile = docSnap.data();
 
-                // ✅ Change "Sign In" to their first name
+                // Change "Sign In" to their first name
                 navAuth.textContent = profile.fullName;
                 navAuth.href = "profile.html"; // clicking name goes to their profile
 
-                // ✅ Add a sign out link next to their name
+                //Add a sign out link next to their name
                 const signOutLink = document.createElement("a");
                 signOutLink.textContent = "SIGN OUT";
                 signOutLink.href = "sign_out.html";
