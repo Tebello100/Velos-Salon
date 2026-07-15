@@ -520,3 +520,40 @@
     display: flex;
     justify-content: center;
 }
+
+.wig-categories{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0px auto;
+}
+
+.wig-categories div, .upload-hairstyle div{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    /* font-size: 30px; */
+    margin: 20px 10px;
+    font-family: "Sora", sans-serif;
+}
+
+.wig-links{
+    text-decoration: none;
+    color: black;
+}
+
+.upload-hairstyle{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.upload-hairstyle div{
+    text-align: center;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 30px;
+    font-family: "Sora", sans-serif;
+}
