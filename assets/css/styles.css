@@ -505,13 +505,13 @@
     transform: scale(1.2);
 }
 
-.cornrow-hairstyle-list, .young-girls-hairstyle-list, .ponytail-hairstyle-list, .dread-hairstyle-list, .men-haircuts-list, .boys-haircuts-list{
+.cornrow-hairstyle-list, .young-girls-hairstyle-list, .ponytail-hairstyle-list, .dread-hairstyle-list, .men-haircuts-list, .boys-haircuts-list, .brazilian-weaves-list, .synthetic-weaves-list, .frontal-weaves-list, .sew-in-weaves-list, .weave-products-list, .hair-products-list{
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 20px;
 }
 
-.cornrow-images, .young-girls-hairstyle-images, .ponytail-images, .dread-images, .men-haircuts-images, .boys-haircuts-images{
+.cornrow-images, .young-girls-hairstyle-images, .ponytail-images, .dread-images, .men-haircuts-images, .boys-haircuts-images, .brazilian-weaves-images, .synthetic-weaves-images, .frontal-weaves-images, .sew-in-weaves-images, .weave-products-images, .hair-products-images{
     width: 200px;
     height: 200px;
 }
