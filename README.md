@@ -1,5 +1,5 @@
-ReadMe
 Velo’s Salon
+
 About the salon
 Velo’s Salon is made to curb the traditional hair salon in townships of South Africa, for example, going to the hair salon without booking, or not knowing how full it is, which will result in one going and standing for a long time to get service. 
 
@@ -19,6 +19,7 @@ If there was a website like this, I wouldn’t even have to struggle so much or 
 
 Project Description
 This hair salon is specifically made for people who have African hair (mostly for ladies' hairstyles), the haircuts section for boys and men can be done for people of any race. This project is aimed at solving the big problems we face in townships, of having to wait forever to be attended to, and to also curb people using cash every time they go to the salon, it is a risk on it’s on for hair salon owners and to also help people book in advance so that they don’t end up using the money for other things.
+
 Velo’s salon allows a user to do the following:
 -	The user can choose the hairstyle they like according to their preferences, for example, they have options to do cornrows, ponytail, dreads, and many more hairstyles they may wish to choose and book, then pay for them, to do at their chosen date.
 -	A user can have a dedicated profile where they can update their details, see when they have booked appointments and their history of hairstyles they have chosen to do.
@@ -31,6 +32,7 @@ I have used the following technologies / languages:
 -	HTML
 -	CSS
 -	JavaScript
+
 I used these because I wanted to be more familiar with JavaScript, since most companies use it. I am very comfortable with HTML and CSS, I wanted to tap into JavaScript, and what better way to learn it than by building? 
 
 Challenges I have faced so far:
