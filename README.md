@@ -1,6 +1,19 @@
+ReadMe
 Velo’s Salon
+About the salon
+Velo’s Salon is made to curb the traditional hair salon in townships of South Africa, for example, going to the hair salon without booking, or not knowing how full it is, which will result in one going and standing for a long time to get service. 
+
+
+Getting Started
+-	To get started on this website, for now, please clone the code and start right on the index.html via Live Server, as Firebase only works there. 
+
+Screenshot
+ <img width="940" height="581" alt="image" src="https://github.com/user-attachments/assets/c9715b84-4084-41ee-9127-20a1361ed1f5" />
+
+This is how the site currently looks, but I am working on a better UI. I will update the picture above when the home page changes.
+
 Motive to do this application
-I hold an IT qualification specializing in Software Development, and I have always wanted to be a traditional Software Engineer, not only because of my experience in CMS. So this is the first website that I have done myself in years, and I needed to put myself to the test because I really believed I could make sites/apps that help people's lives be easier.
+I hold an IT qualification specializing in Software Development, and I have always wanted to be a traditional Software Engineer, not only because of my experience in CMS. So, this is the first website that I have done myself in years, and I needed to put myself to the test because I really believed I could make sites/apps that help people's lives be easier.
 So what better way than to use the problem I am facing now? I struggle so much when I have to go to my local salon, because I just have to wonder if it’s full, closed, maybe, and also wonder how much longer I will have to stand in line for it to be my turn, and how I get there and they don’t do the hairstyle I really want? 
 If there was a website like this, I wouldn’t even have to struggle so much or wait so much to get a service. I would know when the hairdresser is available to do me and also have the convenience to book my time. If I think further about this, I can also pay forward so that I know that I don’t end up using the money I would have wanted to use for hair, for other things as well. So, this could really come in handy. So, this is my motivation, to revive what I have always longed for, by solving a realistic problem that would work in the hairdressing or hair salon industry.
 
