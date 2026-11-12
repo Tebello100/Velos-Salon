@@ -385,7 +385,8 @@
 .special-breadcrumb{
     display: flex;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 20px 40px;
+    width: 100%;
 }
 
 .special-breadcrumb a{
@@ -557,3 +558,19 @@
     font-size: 30px;
     font-family: "Sora", sans-serif;
 }
+
+.hero-image{
+    width: 100%;
+}
+
+.back-arrow{
+    margin-right: 20px;
+}
+
+.forward-arrow{
+    margin-left: 20px;
+}
+
+/* @media   {
+    
+} */

@@ -14,7 +14,6 @@
         <a class="velo-heading" href="index.html">Velo's Salon</a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="appointment.html">Book Appointment</a>
             <button type="button" id="signOutBtn">Sign Out</button>
         </div>
     </nav>
@@ -22,12 +21,11 @@
     <h1 class="profile-heading">My Profile</h1>
     <div id="message"></div>
 
-    <!-- ==================== DISPLAY VIEW ==================== -->
+    <!-- These are displayed on the screen -->
     <div id="profileDisplay">
         <div class="profile-card">
 
             <div class="profile-avatar">
-                <!-- Initials avatar — shows first letter of name -->
                 <span id="displayInitials"></span>
             </div>
 
@@ -75,11 +73,9 @@
         <div class="profile-actions">
             <button type="button" id="editBtn" class="btn-primary">Edit Profile</button>
             <br>
-            <a href="appointment.html" class="btn-secondary">Book Appointment</a>
         </div>
     </div>
 
-    <!-- ==================== EDIT VIEW ==================== -->
     <!-- Hidden by default, shown when Edit Profile is clicked -->
     <div id="profileEdit" style="display: none;">
 

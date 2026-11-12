@@ -3,7 +3,7 @@ import { auth, db } from "../../firebase.js";
 import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-auth.js";
 import { doc, setDoc } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
 
-// No need for firebaseConfig or initializeApp here anymore ✅
+// No need for firebaseConfig or initializeApp here anymore 
 
 function showMessage(text, type) {
   const el = document.getElementById("message");
@@ -27,10 +27,8 @@ async function signUp() {
   const city = document.getElementById("city").value;
   const preferredBranch = document.getElementById("branch").value;
 
-  console.log("2. Form values collected:", { fullName, email, password }); // ✅ confirms values are read
 
   if (password !== confirmPassword) {
-    console.log("3. Passwords don't match");
     showMessage("Passwords do not match!", "error");
     return;
   }
@@ -40,8 +38,6 @@ async function signUp() {
     showMessage("Please fill in all required fields.", "error");
     return;
   }
-
-  console.log("5. Attempting Firebase Auth..."); // ✅ confirms we reached Firebase
 
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
